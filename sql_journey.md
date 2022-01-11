@@ -50,7 +50,7 @@ Once your download is clompleted, change to your default download directory
 to extract the _.tar_ file.
 
 In my case is a budle file _mysql-8.0.26-1.el7.x86_64.rpm-bundle.tar_
-base on my selection on the previous image.
+base on my selection in the previous image.
 
 1. Extract the _RPM_ file from [MySQL](https://www.mysql.com)
 ```bash
@@ -70,7 +70,7 @@ mysql-community-server-8.0.26-1.el7.x86_64.rpm
 mysql-community-test-8.0.26-1.el7.x86_64.rpm
 ```
 2. The following command will install the _RPM_ dependencies needed
-to for _MySQL_ server installation.
+for _MySQL_ server installation.
 
 ```bash
 # sudo rpm -Uvh mysql-community-{server,client,common,libs}-*
