@@ -64,3 +64,29 @@ mysql> SELECT DATABASE();
 +------------+
 1 row in set (0.00 sec)
 ```
+
+> Let's exit [MySQL DB](https://www.mysql.com)
+
+```
+mysql> exit
+```
+
+When logging in to **MySQL** a database cab be selected:
+```
+mysql> mysql -u [user] -p db_name;
+```
+
+The following syntax is for dropping a DATABASE.
+```
+DROP {DATABASE | SCHEMA} [IF EXISTS] db_name
+```
+
+Delete a database.
+```
+mysql> DROP DATABASE db_name;
+```
+By listing the available table, we can notice that
+the dropped table no longer exists.
+```
+mysql> SHOW DATABASES;
+```
