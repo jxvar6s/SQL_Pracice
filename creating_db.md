@@ -71,7 +71,7 @@ mysql> SELECT DATABASE();
 mysql> exit
 ```
 
-When logging in to **MySQL** a database cab be selected:
+When logging in to **MySQL**, a database can be selected.
 ```
 mysql> mysql -u [user] -p db_name;
 ```
@@ -85,7 +85,7 @@ Delete a database.
 ```
 mysql> DROP DATABASE db_name;
 ```
-By listing the available table, we can notice that
+By listing the available tables, we can notice that
 the dropped table no longer exists.
 ```
 mysql> SHOW DATABASES;
