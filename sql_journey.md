@@ -4,15 +4,15 @@ SQL is used to manage data and database systems futermore it is a widely used pr
 
 **Note:** _The following steps are merely for educational purposes and they do not intent to be the only way to approach to SQL Language, as result; there are one to many forms to solve a problem._
 
-Fileds where SQL can be used:
+Fields where SQL can be used:
    - Mapping Neurons.
    - Science Researcher
    - Data Analytics
    - etc...
 
 SQL (It was SEQUEL in 1974) can also help anybody to tell his/her/their interesting stories in data.
-  
-The following terms can be beneficial for managing data.  
+
+The following terms can be beneficial for managing data.
    1. summarize.
    2. explore.
    3. collect.
@@ -46,7 +46,7 @@ On MySQL Product Archives page, click on _MySQL Community Server_.
 On this page, choose the version you want to use en click _download_
 ![](/Images/product_archive.png)
 
-Once your download is clompleted, change to your default download directory 
+Once your download is clompleted, change to your default download directory
 to extract the _.tar_ file.
 
 In my case is a budle file _mysql-8.0.26-1.el7.x86_64.rpm-bundle.tar_
@@ -95,7 +95,7 @@ server.
 ```
 > output
 ```bash
- 51 2021-12-16T03:53:39.289950Z 6 [Note] [MY-010454] [Server] A temporary password is generated 
+ 51 2021-12-16T03:53:39.289950Z 6 [Note] [MY-010454] [Server] A temporary password is generated
  for root@local    host: 7tq_d&%:dg*Y
 ```
 
@@ -108,8 +108,8 @@ Enter password        <- "Enter default password"
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 lessYour MySQL connection id is 8
 Server version: 8.0.26
- 
-Copyright (c) 2000, 2021, Oracle and/or its affiliates. 
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
 
 Oracle is a registered trademark of Oracle Corporation and/or its
 affiliates. Other names may be trademarks of their respective
@@ -155,7 +155,7 @@ the root password from the network.
 
 Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
 Success.
- 
+
 By default, MySQL comes with a database named 'test' that
 anyone can access. This is also intended only for testing,
 and should be removed before moving into a production
@@ -174,7 +174,7 @@ made so far will take effect immediately.
 
 Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
 Success.
- 
+
 All done!
 ```
 
