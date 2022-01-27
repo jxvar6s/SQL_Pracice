@@ -200,3 +200,8 @@ Enter password:
 +--------------------+ 
 ```
 As we can see, good_demo database no longer exist.
+
+---
+
+
+> Note: Continue with creating_table.md file...
