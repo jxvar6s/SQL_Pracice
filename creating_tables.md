@@ -180,7 +180,7 @@ mysql> SHOW CREATE TABLE customers;
 
 
 ### <span style="color:green">Copying and Cloning Tables</span>
-
+![](Images/content.png)
 - CREATE TABLE...LIKE:
 
 CREATE TABLE new_table LIKE origin_table;
