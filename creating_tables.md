@@ -40,7 +40,7 @@ mysql> SHOW TABLE STATUS [FROM db_name];
 mysql> SHOW CREATE TABLE tbl_name;
 
 ---
-#### Commands Demostration.
+#### Commands Demonstration.
 
 ```bash
 # mysql -u root -p
