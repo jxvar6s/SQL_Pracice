@@ -8,7 +8,7 @@ CREATE [TEMPORARY] TABLE [IF NOT EXISTS] table_name
 (create_definition,...) [table_options]
 [partition_options]
 
-> **NOTE:** [TEMPORARY] TABLE can be created to test table structure.
+> <span style="color:red">**NOTE:**</span> [TEMPORARY] TABLE can be created to test table structure.
 Once the session is over, the temporary table will be dropped. 
 
 ### <span style="color:green">Create  a new table:</span>
