@@ -52,7 +52,7 @@ Database changed
 ```
 In the following lines, we need to specify the datatypes for the columns:
 - INT -> integer.
-- PRIMARY KEY -> unique key.
+- PRIMARY KEY -> unique key, it is used to index the table.
 - AUTO_INCREMENT -> It explains itself.
 - VARCHAR(50) -> length of the variable character.
 
@@ -126,3 +126,152 @@ Database: prod  Table: customers
 
 ```
 
+Let's go back to [MySQL](http://www.mysql.com) server.
+
+```bash
+# mysql -u root -p
+Enter password
+
+mysql>
+```
+> **NOTE:** '\G' display the information verticaly rather than horizontally
+```
+ mysql> SHOW TABLE STATUS\G
+*************************** 1. row ***************************
+           Name: customers
+         Engine: InnoDB
+        Version: 10
+     Row_format: Dynamic
+           Rows: 0
+ Avg_row_length: 0
+    Data_length: 16384
+Max_data_length: 0
+   Index_length: 0
+      Data_free: 0
+ Auto_increment: 1
+    Create_time: 2022-01-26 23:07:21
+    Update_time: NULL
+     Check_time: NULL
+      Collation: utf8mb4_0900_ai_ci
+       Checksum: NULL
+ Create_options: 
+        Comment: 
+1 row in set (0.01 sec)
+```
+
+We can display information about how the table was created.
+
+```
+mysql> SHOW CREATE TABLE customers;
++-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table     | Create Table                                                                                                                                                                                                                                                                                                                        |
++-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| customers | CREATE TABLE `customers` (
+  `cust_id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) DEFAULT NULL,
+  `first_name` varchar(50) DEFAULT NULL,
+  `last_name` varchar(50) DEFAULT NULL,
+  `phone_number` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`cust_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
++-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+```
+
+
+### <span style="color:green">Copying and Cloning Tables</span>
+
+- CREATE TABLE...LIKE:
+
+CREATE TABLE new_table LIKE origin_table;
+
+```
+mysql> CREATE TABLE customers_test LIKE customers;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> SHOW TABLES
+    -> ;
++----------------+
+| Tables_in_prod |
++----------------+
+| customers      |
+| customers_test |
++----------------+
+2 rows in set (0.00 sec)
+
+mysql> DESCRIBE customers_test;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| cust_id      | int         | NO   | PRI | NULL    | auto_increment |
+| username     | varchar(50) | YES  |     | NULL    |                |
+| first_name   | varchar(50) | YES  |     | NULL    |                |
+| last_name    | varchar(50) | YES  |     | NULL    |                |
+| phone_number | varchar(25) | YES  |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+```
+In the previous lines, we can see that both tables are identical.
+
+
+- CREATE TABLE...SELECT:
+
+```
+mysql> CREATE TABLE customers_bkup SELECT * FROM customers;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> SHOW TABLES
+    -> ;
++----------------+
+| Tables_in_prod |
++----------------+
+| customers      |
+| customers_bkup |
+| customers_test |
++----------------+
+3 rows in set (0.00 sec)
+
+mysql> 
+
+```
+
+### DROP TABLE <span style="color:green">Syntax</span> 
+
+DROP (TEMPORARY] TABLE (IF EXISTS] tbl_name l,
+tbl_name] ... [RESTRICT | CASCADE]
+
+<span style="color:green">Drop an existing table:</span>
+
+```
+mysql> SHOW TABLES
+    -> ;
++----------------+
+| Tables_in_prod |
++----------------+
+| customers      |
+| customers_bkup |
+| customers_test |
++----------------+
+3 rows in set (0.00 sec)
+```
+
+DROP TABLE tbl_name;
+```
+mysql> DROP TABLE customers_test;
+Query OK, 0 rows affected (0.02 sec)
+```
+DROP TABLE db_name.tbl_name;
+
+```
+mysql> DROP TABLE prod.customers_bkup;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_prod |
++----------------+
+| customers      |
++----------------+
+1 row in set (0.01 sec)
+```
