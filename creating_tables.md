@@ -9,7 +9,7 @@ CREATE [TEMPORARY] TABLE [IF NOT EXISTS] table_name
 [partition_options]
 
 > <span style="color:red">**NOTE:**</span> [TEMPORARY] TABLE can be created to test table structure.
-Once the session is over, the temporary table will be dropped. 
+Once the session is over, the temporary table will be dropped.
 
 ### <span style="color:green">Create  a new table:</span>
 
@@ -103,7 +103,7 @@ Let's show database and its table using _mysqlshow_ command.
 
 ```bash
 # mysqlshow -u root -p prod
-Enter password: 
+Enter password:
 Database: prod
 +-----------+
 |  Tables   |
@@ -112,7 +112,7 @@ Database: prod
 +-----------+
 
 # mysqlshow -u root -p prod customers
-Enter password: 
+Enter password:
 Database: prod  Table: customers
 +--------------+-------------+--------------------+------+-----+---------+----------------+---------------------------------+---------+
 | Field        | Type        | Collation          | Null | Key | Default | Extra          | Privileges                      | Comment |
@@ -154,8 +154,8 @@ Max_data_length: 0
      Check_time: NULL
       Collation: utf8mb4_0900_ai_ci
        Checksum: NULL
- Create_options: 
-        Comment: 
+ Create_options:
+        Comment:
 1 row in set (0.01 sec)
 ```
 
@@ -232,11 +232,11 @@ mysql> SHOW TABLES
 +----------------+
 3 rows in set (0.00 sec)
 
-mysql> 
+mysql>
 
 ```
 
-### DROP TABLE <span style="color:green">Syntax</span> 
+### DROP TABLE <span style="color:green">Syntax</span>
 
 DROP (TEMPORARY] TABLE (IF EXISTS] tbl_name l,
 tbl_name] ... [RESTRICT | CASCADE]
@@ -276,4 +276,4 @@ mysql> SHOW TABLES;
 1 row in set (0.01 sec)
 ```
 
-Continue with insert_view_delete_data.md file...
+Continue with [insert_view_delete_data.md](insert_view_delete_data.md) file...
