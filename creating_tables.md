@@ -275,3 +275,5 @@ mysql> SHOW TABLES;
 +----------------+
 1 row in set (0.01 sec)
 ```
+
+Continue with insert_view_delete_data.md file...
