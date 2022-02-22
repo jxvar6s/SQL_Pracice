@@ -154,15 +154,15 @@ $ mysqlshow [options] [db_name [table_name [column_name]]]
 
 $ mysqladmin -u root -p drop db_name
 
-> Note: Remember the following flags. 
+> Note: Remember the following flags.
 - -u flag -> user
 - -p flag -> It will prompt you for password.
 
 ```bash
 # mysqladmin -u root -p create good_demo
-Enter password: 
+Enter password:
 # mysqlshow -u root -p
-Enter password: 
+Enter password:
 +--------------------+
 |     Databases      |
 +--------------------+
@@ -177,7 +177,7 @@ Enter password:
 | test               |
 +--------------------+
 # mysqladmin -u root -p drop good_demo
-Enter password: 
+Enter password:
 Dropping the database is potentially a very bad thing to do.
 Any data stored in the database will be destroyed.
 
@@ -185,7 +185,7 @@ Do you really want to drop the 'good_demo' database [y/N] y
 Database "good_demo" dropped
 
 # mysqlshow -u root -p
-Enter password: 
+Enter password:
 +--------------------+
 |     Databases      |
 +--------------------+
@@ -197,11 +197,11 @@ Enter password:
 | random             |
 | sys                |
 | test               |
-+--------------------+ 
++--------------------+
 ```
 As we can see, good_demo database no longer exist.
 
 ---
 
 
-> Note: Continue with creating_table.md file...
+> Note: Continue with [creating tables](creating_table.md) file...
