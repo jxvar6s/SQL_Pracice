@@ -29,3 +29,5 @@ This allows related data to be cross-referenced in order to keep it consistent.
 The default value will be added to all new records, if no other value is specified.
 
     column_name data_type DEFAULT value.
+
+> Continue on [Backup and Recovery](backup_n_recovery.md) file ...
