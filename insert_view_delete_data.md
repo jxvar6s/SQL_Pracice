@@ -175,3 +175,5 @@ Empty set (0.00 sec)
 
 mysql> 
 ```
+
+> Continue with [Constraints - MySQL](constrains.md) file ...
