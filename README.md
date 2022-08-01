@@ -2,6 +2,6 @@
 
 ## Content
 
-**[1. Relational Database Management System - Intro...](#heading--1 rdbms.md)**
+**[1. Relational Database Management System - Intro...](rdbms.md)**
 
-**[2. MySql Installation](#heading --2 sql_journey.md)**
+**[2. MySql Installation](sql_journey.md)**
