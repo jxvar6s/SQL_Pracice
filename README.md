@@ -11,3 +11,9 @@
         $ vagrant init jasonc/centos7
         $ vagrant up
         ```
+3. [Creating Databases](creating_db.md)
+4. [Creating Tables](creating_tables.md)
+5. [Inserting, Viewing, and Deleting Data](insert_view_delete_data.md)
+6. [Constraints](constrains_mysql.md)
+7. [Buckup and Recovery](backup_n_recovery.md)
+8. [Numeric Types](numeric_types.md)
