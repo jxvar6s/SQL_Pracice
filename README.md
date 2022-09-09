@@ -17,3 +17,4 @@
 6. [Constraints](constrains_mysql.md)
 7. [Buckup and Recovery](backup_n_recovery.md)
 8. [Numeric Types](numeric_types.md)
+9. [Date and Time Types](date_and_time_types.md)
