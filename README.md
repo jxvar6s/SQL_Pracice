@@ -19,3 +19,4 @@
 8. [Numeric Types](numeric_types.md)
 9. [Date and Time Types](date_and_time_types.md)
 10. [String Types](string_types.md)
+11. [Views](views.md)
