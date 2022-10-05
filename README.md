@@ -21,3 +21,4 @@
 10. [String Types](string_types.md)
 11. [Views](views.md)
 12. [Triggers](triggers.md)
+13. [Stored Routines](stored_routines.md)
