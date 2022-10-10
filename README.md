@@ -22,3 +22,4 @@
 11. [Views](views.md)
 12. [Triggers](triggers.md)
 13. [Stored Routines](stored_routines.md)
+14. [Events](events.md)

@@ -23,3 +23,21 @@ mysql> SHOW PROCEDURE STATUS LIKE 'proc_name';
 ```
 mysql> DROP PROCEDURE proc_name;
 ```
+
+## Working with Functions.
+
+### Create a function
+```
+mysql> CREATE FUNCTION func_name
+([func_param]) RETURN datatype routine_body;
+```
+
+### List functions
+```
+mysql> SHOW FUNCTION STATUS LIKE 'func_name';
+```
+
+### Delete function:
+```
+mysql> DROP FUNCTION func_name;
+```
