@@ -1,5 +1,4 @@
 # SQL Practice...
-
 ## Content
 
 1. [Relational Database Management System - Intro...](rdbms.md)
@@ -23,3 +22,6 @@
 12. [Triggers](triggers.md)
 13. [Stored Routines](stored_routines.md)
 14. [Events](events.md)
+15. [Creating and Deleting Users](create_delete_users.md)
+16. [Granting Privileges](granting_privileges.md)
+17. [Creating and Assigning Roles](creating_and_assigning_roles.md)
