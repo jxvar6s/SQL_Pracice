@@ -15,3 +15,4 @@ mysql> ALTER TABLE tb1_name MODIFY col_name col_definition;
 ```bash
 mysql> ALTER TABLE tbl_name RENAME INDEX old_ _index_name TO new_index_name
 ```
+#### Command line examples.
