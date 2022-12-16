@@ -12,5 +12,6 @@ mysql> ALTER TABLE tbl_name ADD UNIQUE (col_name) ; mysql> ALTER TABLE tbl_name 
 mysql> ALTER TABLE tb1_name MODIFY col_name col_definition;
 ```
 ### Rename indexes:
+```bash
 mysql> ALTER TABLE tbl_name RENAME INDEX old_ _index_name TO new_index_name
 ```

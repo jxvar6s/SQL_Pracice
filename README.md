@@ -25,3 +25,8 @@
 15. [Creating and Deleting Users](create_delete_users.md)
 16. [Granting Privileges](granting_privileges.md)
 17. [Creating and Assigning Roles](creating_and_assigning_roles.md)
+18. [Creating a Table with Constraints](tables_with_constraints.md)
+19. [Inserting](inserting.md)
+20. [updatting](updating.md)
+21. [Altering Table - 1](altering_tables_part_1.md)
+22. [Altering Tables - 2](altering_tables_part_2.md)
