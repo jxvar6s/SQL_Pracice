@@ -30,3 +30,6 @@
 20. [updatting](updating.md)
 21. [Altering Table - 1](altering_tables_part_1.md)
 22. [Altering Tables - 2](altering_tables_part_2.md)
+23. [Deleting](deleting.md)
+24. [Dropping](dropping.md)
+25. [creating_index](creating_index.md)
