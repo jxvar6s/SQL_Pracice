@@ -202,3 +202,5 @@ mysql> SHOW TABLES;
 +----------------+
 3 rows in set (0.01 sec)
 ```
+
+Coming up next [Creating an Index](creating_index.md)
