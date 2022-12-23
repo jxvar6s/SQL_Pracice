@@ -55,3 +55,5 @@ mysql> CREATE INDEX first_last ON customers (first_name, last_name);
 Query OK, 0 rows affected (0.02 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 ```
+
+Next [Selecting](selecting.md)
