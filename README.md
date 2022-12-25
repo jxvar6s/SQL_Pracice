@@ -33,3 +33,8 @@
 23. [Deleting](deleting.md)
 24. [Dropping](dropping.md)
 25. [creating_index](creating_index.md)
+26. [Selection](selecting.md)
+27. [Operators and Clauses](clauses_operators.md)
+28. [ORDER BY and GROUP BY](orderby_groupby.md)
+29. [Unions](unions.md)
+30. [Joins](joins.md)

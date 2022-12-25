@@ -1,6 +1,5 @@
 # select
-The following examples will show a basic fuctionality of _SELECT_ statement.
-
+The following examples will show a basic fuctionality of _SELECT_ statement; furthermore, it help us to retrieve data from tables and columns.
 ## SELECT Syntax
 ```bash
 SELECT
